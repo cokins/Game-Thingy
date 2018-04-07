@@ -5,7 +5,7 @@
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
-extents = Vector2( 120.781, 136.13 )
+extents = Vector2( 126.298, 136.13 )
 
 [sub_resource type="AtlasTexture" id=2]
 
@@ -28,14 +28,14 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="0"]
 
-position = Vector2( -0.469711, -6.61801 )
+position = Vector2( -0.510081, 0.0639677 )
+scale = Vector2( 0.0459486, 0.0545384 )
 shape = SubResource( 1 )
 disabled = true
 
 [node name="Sprite" type="Sprite" parent="." index="1"]
 
-position = Vector2( 8.9426, -10.4709 )
-scale = Vector2( -22.3086, 18.3015 )
+position = Vector2( -0.776764, 0.101044 )
 texture = SubResource( 2 )
 _sections_unfolded = [ "Material", "Offset", "Region", "Transform", "Visibility" ]
 
