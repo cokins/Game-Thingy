@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/menuhover.wav-2f12c812b635e7269a47a39d941c5579.sample"
+
+[deps]
+
+source_file="res://Graphics/sounds/menuhover.wav"
+source_md5="548c730c3d5b3ab8fab8a73e20328051"
+
+dest_files=[ "res://.import/menuhover.wav-2f12c812b635e7269a47a39d941c5579.sample" ]
+dest_md5="4a561e322d1b439a7603a5c2f98396f8"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

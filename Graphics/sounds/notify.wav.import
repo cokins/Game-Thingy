@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/notify.wav-3b069291091a6e71f252ef6db4bf0594.sample"
+
+[deps]
+
+source_file="res://Graphics/sounds/notify.wav"
+source_md5="0749eb5e09a99564d8d5d090d60ef7e2"
+
+dest_files=[ "res://.import/notify.wav-3b069291091a6e71f252ef6db4bf0594.sample" ]
+dest_md5="d63b2727caa972826278c3a958bc6984"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
