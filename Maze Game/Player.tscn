@@ -9,22 +9,23 @@ extents = Vector2( 126.298, 136.13 )
 
 [sub_resource type="AtlasTexture" id=2]
 
-flags = 4
+flags = 0
 atlas = ExtResource( 1 )
 region = Rect2( 98, 224, 11, 15 )
 margin = Rect2( 0, 0, 0, 0 )
 filter_clip = false
+_sections_unfolded = [ "Resource" ]
 
 [node name="Player" type="Area2D" index="0"]
 
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
-linear_damp = 0.1
+linear_damp = 0.11
 angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
-_sections_unfolded = [ "Transform" ]
+_sections_unfolded = [ "Audio Bus", "Collision", "Material", "Pause", "Pickable", "Transform", "Visibility", "Z Index" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="0"]
 
