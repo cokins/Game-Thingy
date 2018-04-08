@@ -19,7 +19,7 @@ _sections_unfolded = [ "Resource" ]
 custom_solver_bias = 0.0
 extents = Vector2( 7.3956, 8.32559 )
 
-[node name="Player" type="Area2D"]
+[node name="Player" type="Area2D" index="0"]
 
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
@@ -34,8 +34,7 @@ SPEED = 150
 
 [node name="PlayerCamera" parent="." index="0" instance=ExtResource( 2 )]
 
-position = Vector2( 1.19377, 0.985107 )
-zoom = Vector2( 0.25, 0.25 )
+position = Vector2( -0.112289, 0.0918961 )
 
 [node name="Sprite" type="Sprite" parent="." index="1"]
 

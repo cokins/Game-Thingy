@@ -5,7 +5,7 @@
 [ext_resource path="res://Tilesets/WhiteHouse Tileset.res" type="TileSet" id=3]
 [ext_resource path="res://Weapon/Melee/ButterKnife.tscn" type="PackedScene" id=4]
 
-[node name="Main World" type="Node" index="0"]
+[node name="Main World" type="Node"]
 
 [node name="Dirt Layer" parent="." index="0" instance=ExtResource( 1 )]
 
