@@ -1,4 +1,4 @@
-extends Area2D
+extends Node2D
 
 var in_inventory = false
 
@@ -9,13 +9,11 @@ func set_drop_state():
 	in_inventory = false
 	$Equipped.hide()
 	$OnGround.show()
-	$OnGround/PickupBox.disabled = false
 	
 func set_pickup_state():
 	in_inventory = true
 	$Equipped.show()
 	$OnGround.hide()
-	$OnGround/PickupBox.disabled = true
 	position = Vector2()
 
 func pickup():
@@ -50,6 +48,7 @@ func use():
 	pass
 
 func _on_OnGround_area_shape_entered(area_id, area, area_shape, self_shape):
-	var inventory = get_entity_inventory(area)
-	if inventory:
-		inventory.add_item(self)
+	if !in_inventory:
+		var inventory = get_entity_inventory(area)
+		if inventory:
+			inventory.add_item(self)
