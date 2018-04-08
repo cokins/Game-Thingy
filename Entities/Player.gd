@@ -9,6 +9,8 @@ func _ready():
 func _process(delta):
     var velocity = Vector2() # the player's movement vector
 	# Key events in _process will be called continously
+    if Input.is_action_pressed("ui_accept"):
+        $Inventory.use_active_item()
     if Input.is_action_pressed("ui_right"):
         velocity.x += 1
     if Input.is_action_pressed("ui_left"):
