@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Item/Item.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Item/Weapon/Weapon.gd" type="Script" id=2]
+
+[node name="Weapon" instance=ExtResource( 1 )]
+
+script = ExtResource( 2 )
+DAMAGE = null
+
+[node name="AttackRate" type="Timer" parent="." index="2"]
+
+process_mode = 1
+wait_time = 1.0
+one_shot = false
+autostart = false
+
+[connection signal="timeout" from="AttackRate" to="." method="_on_AttackRate_timeout"]
+
+
