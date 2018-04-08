@@ -1,6 +1,6 @@
 [gd_scene format=2]
 
-[node name="Player Camera" type="Camera2D" index="0"]
+[node name="Player Camera" type="Camera2D"]
 
 position = Vector2( 197.942, 150.133 )
 anchor_mode = 1
