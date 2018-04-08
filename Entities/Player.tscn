@@ -25,15 +25,12 @@ audio_bus_override = false
 audio_bus_name = "Master"
 script = ExtResource( 1 )
 _sections_unfolded = [ "Audio Bus", "Collision", "Material", "Pause", "Pickable", "Transform", "Visibility", "Z Index" ]
-SPEED = 600
+SPEED = 150
 
 [node name="Player Camera" parent="." index="0" instance=ExtResource( 2 )]
 
-position = Vector2( 2.81057, -1.24557 )
-zoom = Vector2( 0.5, 0.5 )
-drag_margin_h_enabled = false
-drag_margin_v_enabled = false
-_sections_unfolded = [ "Drag Margin", "Editor", "Limit", "Material", "Offset", "Smoothing", "Visibility" ]
+position = Vector2( 1.19377, 0.985107 )
+zoom = Vector2( 0.3, 0.3 )
 
 [node name="Sprite" type="Sprite" parent="." index="1"]
 
