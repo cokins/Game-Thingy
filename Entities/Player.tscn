@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Entities/Player.gd" type="Script" id=1]
-[ext_resource path="res://World/Player Camera.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Entities/PlayerCamera.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Graphics/graphics/mob/bluezombie.png" type="Texture" id=3]
 [ext_resource path="res://Weapon/Inventory.tscn" type="PackedScene" id=4]
 
@@ -32,7 +32,7 @@ script = ExtResource( 1 )
 _sections_unfolded = [ "Audio Bus", "Collision", "Material", "Pause", "Pickable", "Transform", "Visibility", "Z Index" ]
 SPEED = 150
 
-[node name="Player Camera" parent="." index="0" instance=ExtResource( 2 )]
+[node name="PlayerCamera" parent="." index="0" instance=ExtResource( 2 )]
 
 position = Vector2( 1.19377, 0.985107 )
 zoom = Vector2( 0.25, 0.25 )
