@@ -10,11 +10,19 @@ region = Rect2( 0, 0, 16, 16 )
 margin = Rect2( 0, 0, 0, 0 )
 filter_clip = false
 
-[sub_resource type="AtlasTexture" id=3]
+[sub_resource type="AtlasTexture" id=2]
 
 flags = 0
 atlas = ExtResource( 1 )
 region = Rect2( 16, 0, 16, 16 )
+margin = Rect2( 0, 0, 0, 0 )
+filter_clip = false
+
+[sub_resource type="AtlasTexture" id=3]
+
+flags = 0
+atlas = SubResource( 2 )
+region = Rect2( 0, 0, 0, 0 )
 margin = Rect2( 0, 0, 0, 0 )
 filter_clip = false
 
@@ -30,14 +38,6 @@ filter_clip = false
 
 flags = 0
 atlas = SubResource( 4 )
-region = Rect2( 0, 0, 0, 0 )
-margin = Rect2( 0, 0, 0, 0 )
-filter_clip = false
-
-[sub_resource type="AtlasTexture" id=2]
-
-flags = 0
-atlas = SubResource( 5 )
 region = Rect2( 16, 0, 16, 16 )
 margin = Rect2( 0, 0, 0, 0 )
 filter_clip = false
@@ -81,7 +81,7 @@ _sections_unfolded = [ "Animation" ]
 [node name="Dirt2" type="Sprite" parent="." index="1"]
 
 position = Vector2( 30, 10 )
-texture = SubResource( 2 )
+texture = SubResource( 5 )
 
 [node name="Dirt3" type="Sprite" parent="." index="2"]
 

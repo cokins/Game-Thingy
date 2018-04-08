@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Entities/Player.gd" type="Script" id=1]
 [ext_resource path="res://World/Player Camera.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Graphics/graphics/mob/bluezombie.png" type="Texture" id=3]
+[ext_resource path="res://Weapon/Butter Knife.tscn" type="PackedScene" id=4]
 
 [sub_resource type="AtlasTexture" id=1]
 
@@ -28,7 +29,7 @@ SPEED = 600
 
 [node name="Player Camera" parent="." index="0" instance=ExtResource( 2 )]
 
-position = Vector2( 2.64449, -0.913406 )
+position = Vector2( 2.81057, -1.24557 )
 zoom = Vector2( 0.5, 0.5 )
 drag_margin_h_enabled = false
 drag_margin_v_enabled = false
@@ -37,5 +38,12 @@ _sections_unfolded = [ "Drag Margin", "Editor", "Limit", "Material", "Offset", "
 [node name="Sprite" type="Sprite" parent="." index="1"]
 
 texture = SubResource( 1 )
+
+[node name="Butter Knife" parent="." index="2" instance=ExtResource( 4 )]
+
+position = Vector2( -3.96992, 8.46053 )
+rotation = -4.05964
+scale = Vector2( 0.430454, 0.471586 )
+_sections_unfolded = [ "Transform" ]
 
 
