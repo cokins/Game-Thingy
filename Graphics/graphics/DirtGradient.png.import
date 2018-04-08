@@ -10,7 +10,7 @@ source_file="res://Graphics/graphics/DirtGradient.png"
 source_md5="fbb7f6640a541c77e0cf04518228c085"
 
 dest_files=[ "res://.import/DirtGradient.png-4650f290cbce701d9ecb828699a278ec.stex" ]
-dest_md5="6aef1be70f5ec1cfbfe5b1c3a846f1d9"
+dest_md5="98311e8219518c7561e96fd26e2e17c0"
 
 [params]
 
@@ -18,7 +18,7 @@ compress/mode=0
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
-flags/repeat=1
+flags/repeat=0
 flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
@@ -28,5 +28,5 @@ process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0
