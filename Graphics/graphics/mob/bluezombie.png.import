@@ -10,7 +10,7 @@ source_file="res://Graphics/graphics/mob/bluezombie.png"
 source_md5="f322686c54c8367641e196fd4a4c9208"
 
 dest_files=[ "res://.import/bluezombie.png-ef4d1f34df1fb41c558330c850f511cf.stex" ]
-dest_md5="afa1663f2bd2c458395e087ebf840557"
+dest_md5="c26d2c0fb10afe653f4386b9ad212eef"
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
@@ -28,5 +28,5 @@ process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0
