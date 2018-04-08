@@ -6,5 +6,6 @@
 
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
+CAPACITY = 3
 
 

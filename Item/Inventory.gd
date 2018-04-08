@@ -1,8 +1,13 @@
 extends Node
 
+export (int) var CAPACITY = 3
+
 var active_item = null
 
 func add_item(item):
+	if !can_fit():
+		return
+
 	item.pickup()
 	# hide current active item
 	if active_item:
@@ -11,6 +16,12 @@ func add_item(item):
 	# make new item active
 	active_item = item
 	call_deferred("reparent", self, item)
+	
+func can_fit():
+	if get_child_count() >= CAPACITY:
+		return false
+	else:
+		return true
 	
 func drop_active_item():
 	if active_item:
