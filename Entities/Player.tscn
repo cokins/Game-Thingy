@@ -1,9 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Entities/Player.gd" type="Script" id=1]
 [ext_resource path="res://World/Player Camera.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Graphics/graphics/mob/bluezombie.png" type="Texture" id=3]
-[ext_resource path="res://Weapon/Butter Knife.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Weapon/Inventory.tscn" type="PackedScene" id=4]
 
 [sub_resource type="AtlasTexture" id=1]
 
@@ -14,7 +14,12 @@ margin = Rect2( 0, 0, 0, 0 )
 filter_clip = false
 _sections_unfolded = [ "Resource" ]
 
-[node name="Player" type="Area2D" index="0"]
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 6.90835, 8.13305 )
+
+[node name="Player" type="Area2D"]
 
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
@@ -30,17 +35,18 @@ SPEED = 150
 [node name="Player Camera" parent="." index="0" instance=ExtResource( 2 )]
 
 position = Vector2( 1.19377, 0.985107 )
-zoom = Vector2( 0.3, 0.3 )
+zoom = Vector2( 0.25, 0.25 )
 
 [node name="Sprite" type="Sprite" parent="." index="1"]
 
 texture = SubResource( 1 )
 
-[node name="Butter Knife" parent="." index="2" instance=ExtResource( 4 )]
+[node name="HitBox" type="CollisionShape2D" parent="." index="2"]
 
-position = Vector2( -3.96992, 8.46053 )
-rotation = -4.05964
-scale = Vector2( 0.430454, 0.471586 )
-_sections_unfolded = [ "Transform" ]
+shape = SubResource( 2 )
+
+[node name="Inventory" parent="." index="3" instance=ExtResource( 4 )]
+
+_sections_unfolded = [ "Transform", "Visibility" ]
 
 

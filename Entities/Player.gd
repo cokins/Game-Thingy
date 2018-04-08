@@ -4,9 +4,7 @@ extends Area2D
 export (int) var SPEED
 
 func _ready():
-	# Called every time the node is added to the scene.
-	# Initialization here
-	pass
+	$HitBox.disabled = false
 
 func _process(delta):
     var velocity = Vector2() # the player's movement vector
