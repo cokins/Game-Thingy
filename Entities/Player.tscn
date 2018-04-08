@@ -17,7 +17,7 @@ _sections_unfolded = [ "Resource" ]
 [sub_resource type="RectangleShape2D" id=2]
 
 custom_solver_bias = 0.0
-extents = Vector2( 6.90835, 8.13305 )
+extents = Vector2( 7.3956, 8.32559 )
 
 [node name="Player" type="Area2D"]
 

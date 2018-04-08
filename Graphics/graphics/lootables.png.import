@@ -10,7 +10,7 @@ source_file="res://Graphics/graphics/lootables.png"
 source_md5="47812dc38ba7fd0ef151311e9e7e3f56"
 
 dest_files=[ "res://.import/lootables.png-50c731f9606c3ec31d54dde7c7de52f5.stex" ]
-dest_md5="b422b907aa241646292f09e5317ea0ba"
+dest_md5="9b2198deb5118c0e59e10f3f5f950305"
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

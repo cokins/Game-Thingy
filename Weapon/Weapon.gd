@@ -3,7 +3,13 @@ extends Area2D
 var equipped = false
 
 func _ready():
-	drop()
+	init_drop()
+
+func init_drop():
+	equipped = false
+	$Equipped.hide()
+	$OnGround.show()
+	$OnGround/PickupBox.disabled = false
 
 func equip():
 	equipped = true
@@ -15,10 +21,13 @@ func equip():
 	position = Vector2()
 	
 func drop():
-	equipped = false
-	$Equipped.hide()
-	$OnGround.show()
-	$OnGround/PickupBox.disabled = false
+	init_drop()
+	
+	# Since we're dropping this we should copy the parent's
+	# current position
+	var inventory = self.get_parent()
+	var parent = inventory.get_parent()
+	position = Vector2(parent.position.x + 17, parent.position.y)
 
 func _on_OnGround_area_shape_entered(area_id, area, area_shape, self_shape):
 	if area.has_node("Inventory"):
