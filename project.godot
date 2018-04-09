@@ -17,6 +17,7 @@ config/icon="res://icon.png"
 [autoload]
 
 Transition="*res://Singleton/Transition.tscn"
+SceneCache="*res://Singleton/SceneCache.tscn"
 
 [display]
 

@@ -9,7 +9,10 @@ var teleporting = false
 func teleport(player):
 	Transition.fade_in()
 	# Load the level
-	var destination = load(DESTINATION_ROOM_FILE).instance()
+	var destination = SceneCache.get_scene(DESTINATION_ROOM_FILE)
+	if !destination:
+		destination = load(DESTINATION_ROOM_FILE).instance()
+		SceneCache.cache_scene(DESTINATION_ROOM_FILE, destination)
 
 	# Load the teleport
 	var teleport = destination.get_node(DESTINATION_TELEPORT_NAME)
@@ -39,8 +42,14 @@ func teleport(player):
 	
 	# Set player position according to spawn point
 	player.position = teleport.position + spawn_point.position
+	
 	Transition.fade_out()
+	Transition.transitioning = false
 
 func _on_TeleportationPad_area_shape_entered(area_id, area, area_shape, self_shape):
+	if Transition.transitioning:
+		return
+
 	if area && "name" in area && area.name == 'Player':
-		teleport(area)
+		Transition.transitioning = true
+		call_deferred("teleport", area)
