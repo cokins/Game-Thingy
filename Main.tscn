@@ -71,11 +71,11 @@ audio_bus_name = "Master"
 
 [node name="Sprite" type="Sprite" parent="Character" index="0"]
 
-position = Vector2( 89.2557, 51.5644 )
+position = Vector2( 81.3114, 101.216 )
 texture = ExtResource( 3 )
 vframes = 5
 hframes = 4
-frame = 7
+frame = 5
 region_rect = Rect2( 16, 16, 16, 16 )
 _sections_unfolded = [ "Animation", "Offset", "Region" ]
 
