@@ -1,10 +1,44 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Item/Weapon/Projectile/ProjectileWeapon.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Item/Weapon/Projectile/Glock.gd" type="Script" id=2]
+[ext_resource path="res://Graphics/graphics/lootables.png" type="Texture" id=3]
+
+[sub_resource type="AtlasTexture" id=3]
+
+flags = 0
+atlas = ExtResource( 3 )
+region = Rect2( 16, 16, 16, 16 )
+margin = Rect2( 0, 0, 0, 0 )
+filter_clip = false
+
+[sub_resource type="RectangleShape2D" id=4]
+
+custom_solver_bias = 0.0
+extents = Vector2( 8.08119, 8.26944 )
+
+[sub_resource type="AtlasTexture" id=2]
+
+flags = 0
+atlas = ExtResource( 3 )
+region = Rect2( 16, 0, 16, 16 )
+margin = Rect2( 0, 0, 0, 0 )
+filter_clip = false
 
 [node name="Glock" index="0" instance=ExtResource( 1 )]
 
 script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="OnGround" index="0"]
+
+texture = SubResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="OnGround" index="1"]
+
+shape = SubResource( 4 )
+
+[node name="Sprite" type="Sprite" parent="Equipped" index="0"]
+
+texture = SubResource( 2 )
 
 

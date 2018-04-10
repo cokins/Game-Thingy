@@ -10,7 +10,7 @@ source_file="res://Graphics/graphics/weapon/bullet.png"
 source_md5="e4f296fba82e098b9ca3e7bb9c67e666"
 
 dest_files=[ "res://.import/bullet.png-41b9497d4e9c5a70c485d9ef7538d79c.stex" ]
-dest_md5="be4cb238493ce5b0eaf19d9a8930a96a"
+dest_md5="c8fa115227540266b364b7515a1dcabd"
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
@@ -28,5 +28,5 @@ process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0
