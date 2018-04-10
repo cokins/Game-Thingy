@@ -26,7 +26,7 @@ region = Rect2( 16, 0, 16, 16 )
 margin = Rect2( 0, 0, 0, 0 )
 filter_clip = false
 
-[node name="Glock" index="0" instance=ExtResource( 1 )]
+[node name="Glock" instance=ExtResource( 1 )]
 
 script = ExtResource( 2 )
 DAMAGE = 10
