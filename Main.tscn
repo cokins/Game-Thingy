@@ -48,7 +48,7 @@ tracks/0/keys = {
 "values": [ 0, 1, 2, 3, 2, 1 ]
 }
 
-[node name="Main" type="Node" index="0"]
+[node name="Main" type="Node"]
 
 [node name="Level" type="Node" parent="." index="0"]
 
@@ -70,11 +70,11 @@ audio_bus_name = "Master"
 
 [node name="Sprite" type="Sprite" parent="Character" index="0"]
 
-position = Vector2( 81.3114, 101.216 )
+position = Vector2( 89.2557, 51.5644 )
 texture = ExtResource( 3 )
 vframes = 5
 hframes = 4
-frame = 5
+frame = 7
 region_rect = Rect2( 16, 16, 16, 16 )
 _sections_unfolded = [ "Animation", "Offset", "Region" ]
 

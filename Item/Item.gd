@@ -37,6 +37,12 @@ func get_inventory_parent():
 	else:
 		return null
 		
+func get_map():
+	return get_inventory_parent().get_parent()
+	
+func get_position_on_map():
+	return get_inventory_parent().position
+		
 func get_entity_inventory(entity):
 	if entity.has_node("Inventory"):
 		return entity.get_node("Inventory")

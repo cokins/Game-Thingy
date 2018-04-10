@@ -27,62 +27,85 @@ tile_data = PoolIntArray( -65522, 4, 0, -65521, 7, 0, 12, 4, 0, 13, 5, 0, 14, 8,
 [node name="ButterKnife" parent="." index="2" instance=ExtResource( 4 )]
 
 position = Vector2( 200, 100 )
+_sections_unfolded = [ "Transform" ]
+DAMAGE = null
 
 [node name="ButterKnife2" parent="." index="3" instance=ExtResource( 4 )]
 
 position = Vector2( 160, 80 )
+_sections_unfolded = [ "Transform" ]
+DAMAGE = null
 
 [node name="ButterKnife3" parent="." index="4" instance=ExtResource( 4 )]
 
 position = Vector2( 270, 110 )
+_sections_unfolded = [ "Transform" ]
+DAMAGE = null
 
 [node name="ButterKnife4" parent="." index="5" instance=ExtResource( 4 )]
 
 position = Vector2( 310, 90 )
+_sections_unfolded = [ "Transform" ]
+DAMAGE = null
 
 [node name="ButterKnife5" parent="." index="6" instance=ExtResource( 4 )]
 
 position = Vector2( 240, 140 )
+_sections_unfolded = [ "Transform" ]
+DAMAGE = null
 
 [node name="ButterKnife6" parent="." index="7" instance=ExtResource( 4 )]
 
 position = Vector2( 200, 140 )
+_sections_unfolded = [ "Transform" ]
+DAMAGE = null
 
 [node name="ButterKnife7" parent="." index="8" instance=ExtResource( 4 )]
 
 position = Vector2( 150, 130 )
+_sections_unfolded = [ "Transform" ]
+DAMAGE = null
 
 [node name="ButterKnife8" parent="." index="9" instance=ExtResource( 4 )]
 
 position = Vector2( 120, 120 )
+_sections_unfolded = [ "Transform" ]
+DAMAGE = null
 
 [node name="Axe" parent="." index="10" instance=ExtResource( 5 )]
 
 position = Vector2( 70, 210 )
+DAMAGE = null
 
 [node name="Axe2" parent="." index="11" instance=ExtResource( 5 )]
 
 position = Vector2( 140, 220 )
+DAMAGE = null
 
 [node name="Axe3" parent="." index="12" instance=ExtResource( 5 )]
 
 position = Vector2( 200, 240 )
+DAMAGE = null
 
 [node name="Axe4" parent="." index="13" instance=ExtResource( 5 )]
 
 position = Vector2( 310, 210 )
+DAMAGE = null
 
 [node name="Axe5" parent="." index="14" instance=ExtResource( 5 )]
 
 position = Vector2( -10, 120 )
+DAMAGE = null
 
 [node name="Axe6" parent="." index="15" instance=ExtResource( 5 )]
 
 position = Vector2( 70, 140 )
+DAMAGE = null
 
 [node name="Axe7" parent="." index="16" instance=ExtResource( 5 )]
 
 position = Vector2( 40, 70 )
+DAMAGE = null
 
 [node name="Test" parent="." index="17" instance=ExtResource( 6 )]
 
