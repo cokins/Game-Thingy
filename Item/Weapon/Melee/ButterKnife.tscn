@@ -26,8 +26,6 @@ filter_clip = false
 
 [node name="ButterKnife" instance=ExtResource( 1 )]
 
-_sections_unfolded = [ "Transform" ]
-
 [node name="Sprite" type="Sprite" parent="OnGround" index="0"]
 
 texture = SubResource( 1 )
@@ -39,7 +37,5 @@ shape = SubResource( 2 )
 [node name="Sprite" type="Sprite" parent="Equipped" index="0"]
 
 texture = SubResource( 3 )
-
-[connection signal="area_shape_entered" from="OnGround" to="." method="_on_OnGround_area_shape_entered"]
 
 
