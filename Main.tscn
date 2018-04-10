@@ -2,6 +2,7 @@
 
 [ext_resource path="res://World/Room/MainWorld.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Entities/Player.tscn" type="PackedScene" id=2]
+<<<<<<< HEAD
 [ext_resource path="res://Assets/Char/character.png" type="Texture" id=3]
 
 [sub_resource type="Animation" id=2]
@@ -50,6 +51,10 @@ tracks/0/keys = {
 }
 
 [node name="Main" type="Node" index="0"]
+=======
+
+[node name="Main" type="Node"]
+>>>>>>> c086f4626cd9f43d1a605881480448b7b70ee010
 
 [node name="Level" type="Node" parent="." index="0"]
 
