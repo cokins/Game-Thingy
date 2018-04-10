@@ -56,7 +56,7 @@ tracks/0/keys = {
 
 [node name="Player" parent="Level/Main World" index="18" instance=ExtResource( 2 )]
 
-position = Vector2( 125.512, 167.815 )
+position = Vector2( 92.2707, 18.2295 )
 
 [node name="Character" type="Area2D" parent="." index="1"]
 

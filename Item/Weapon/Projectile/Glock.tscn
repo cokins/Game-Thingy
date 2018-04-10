@@ -29,6 +29,7 @@ filter_clip = false
 [node name="Glock" instance=ExtResource( 1 )]
 
 script = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
 DAMAGE = 10
 PROJECTILE = ExtResource( 3 )
 SPEED = 300
@@ -49,5 +50,7 @@ texture = SubResource( 2 )
 
 wait_time = 0.266294
 one_shot = true
+
+[connection signal="area_shape_entered" from="OnGround" to="." method="_on_OnGround_area_shape_entered"]
 
 
