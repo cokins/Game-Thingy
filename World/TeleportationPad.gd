@@ -8,6 +8,11 @@ var teleporting = false
 
 func teleport(player):
 	Transition.fade_in()
+	
+	# Get the parent container of the current room
+	var room = get_parent()
+	var container = room.get_parent()
+	
 	# Load the level
 	var destination = SceneCache.get_scene(DESTINATION_ROOM_FILE)
 	if !destination:
@@ -22,12 +27,7 @@ func teleport(player):
 	
 	# At this point, if we haven't thrown an exception
 	# we can attempt to change the level
-	
-	# Get the main container of rooms
-	var room = get_parent()
-	if !room: return
-	var container = room.get_parent()
-	if !container: return
+
 	
 	# Remove the player from the current room
 	room.remove_child(player)
