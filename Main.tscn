@@ -7,7 +7,7 @@
 [sub_resource type="Animation" id=1]
 
 resource_name = "idle"
-length = 0.8
+length = 1.2
 loop = true
 step = 0.1
 tracks/0/type = "value"
@@ -17,10 +17,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.2, 0.4, 0.6 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ 0, 1, 2, 3 ]
+"values": [ 0, 1, 2, 3, 2, 1 ]
 }
 
 [node name="Main" type="Node" index="0"]
@@ -45,11 +45,10 @@ audio_bus_name = "Master"
 
 [node name="Sprite" type="Sprite" parent="Character" index="0"]
 
-position = Vector2( -74.4398, -30.4418 )
+position = Vector2( 97.5602, 160.394 )
 texture = ExtResource( 3 )
 vframes = 5
 hframes = 4
-frame = 1
 region_rect = Rect2( 16, 16, 16, 16 )
 _sections_unfolded = [ "Animation", "Offset", "Region" ]
 
