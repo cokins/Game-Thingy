@@ -45,7 +45,7 @@ audio_bus_name = "Master"
 
 [node name="Sprite" type="Sprite" parent="Character" index="0"]
 
-position = Vector2( 97.5602, 160.394 )
+position = Vector2( 77.1265, 82.244 )
 texture = ExtResource( 3 )
 vframes = 5
 hframes = 4
