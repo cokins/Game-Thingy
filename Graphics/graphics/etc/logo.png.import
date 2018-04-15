@@ -10,7 +10,7 @@ source_file="res://Graphics/graphics/etc/logo.png"
 source_md5="cbb5b90bb8e33a180807ff91decc1d19"
 
 dest_files=[ "res://.import/logo.png-a200ecdbb98653a4af83177976dc2735.stex" ]
-dest_md5="16293d19fc64b89248c85a27ffc4224e"
+dest_md5="c4b24202eec791b0e165f00c9fd1ae45"
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
