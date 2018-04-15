@@ -7,10 +7,10 @@ path="res://.import/character.png-48cc62536d929fcbd5f05118a8b80aee.stex"
 [deps]
 
 source_file="res://Assets/Char/character.png"
-source_md5="f030658a3eb6ae9a6c4f296e58543706"
+source_md5="d0ca90abf8d1189227fdeba5c353985f"
 
 dest_files=[ "res://.import/character.png-48cc62536d929fcbd5f05118a8b80aee.stex" ]
-dest_md5="50778753ded61f5ef351a613b9f039bd"
+dest_md5="acca90e82d879383492ce4ab4c4a5bcf"
 
 [params]
 

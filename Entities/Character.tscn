@@ -46,7 +46,7 @@ tracks/0/keys = {
 "values": [ 0, 1, 2, 3, 2, 1 ]
 }
 
-[node name="Character" type="Area2D"]
+[node name="Character" type="Area2D" index="0"]
 
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
@@ -62,7 +62,7 @@ position = Vector2( 171.977, 168.556 )
 texture = ExtResource( 1 )
 vframes = 5
 hframes = 4
-frame = 7
+frame = 2
 region_rect = Rect2( 16, 16, 16, 16 )
 _sections_unfolded = [ "Animation", "Offset", "Region" ]
 
