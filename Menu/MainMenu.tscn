@@ -2,11 +2,7 @@
 
 [ext_resource path="res://Menu/MainMenu.gd" type="Script" id=1]
 
-<<<<<<< Updated upstream
 [node name="MainMenu" type="Control" index="0"]
-=======
-[node name="MainMenu" type="MarginContainer"]
->>>>>>> Stashed changes
 
 anchor_left = 0.0
 anchor_top = 0.0
