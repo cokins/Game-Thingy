@@ -10,7 +10,7 @@ source_file="res://Graphics/graphics/gui/newgame_std.png"
 source_md5="1fc45d49d801cba8d3e192c2ba910779"
 
 dest_files=[ "res://.import/newgame_std.png-6171fb3a186e290c3a13a0c93da0b7d7.stex" ]
-dest_md5="77f1bb0282ef808b8d972c966d1f4727"
+dest_md5="8cd7f775383c45d984dc532f4ce3ba57"
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
@@ -28,5 +28,5 @@ process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0
