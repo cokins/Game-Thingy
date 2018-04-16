@@ -1,6 +1,7 @@
 extends Area2D
+export (int) var SPEED
 
-var tile_size = 32
+var tile_size = 16
 var can_move = true
 var facing = 'down'
 var moves = {'right': Vector2(1, 0),
@@ -8,25 +9,24 @@ var moves = {'right': Vector2(1, 0),
 			  'up': Vector2(0, -1),
 			  'down': Vector2(0, 1)}
 
-var raycasts = {'right': $ray_right,
-              'left': $ray_left,
-			  'up': $ray_up,
-			  'down': $ray_down}
+var raycasts = {'right': 'ray_right',
+              'left': 'ray_left',
+			  'up': 'ray_up',
+			  'down': 'ray_down'}
 			
 func move(direction):
+	print('I AM HERE')
 	facing = direction
-	if get_node(raycasts[facing]).is_colliding():
-        return false
-	can_move = false
+#	if get_node(raycasts[facing]).is_colliding():
+#        return
 	$AnimationPlayer.play(facing)
-	$MoveTween.interpolate_property(self, 'position', position,
-	                                position + moves[facing] * tile_size, 0.8,
-									Tween.TRANS_SINE, Tween.EASE_IN_OUT)
-	$MoveTween.start()
+#	$MoveTween.interpolate_property(self, 'position', position,
+#	                                position + moves[facing] * tile_size, 0.8,
+#									Tween.TRANS_SINE, Tween.EASE_IN_OUT)
+	position = position + moves[facing] * SPEED
 	return true
 			
 
-export (int) var SPEED
 
 #func _ready():
 #	$HitBox.disabled = false

@@ -8,7 +8,7 @@
 [node name="Player" index="0" instance=ExtResource( 1 )]
 
 script = ExtResource( 2 )
-SPEED = null
+SPEED = 1
 
 [node name="Sprite" parent="." index="0"]
 
